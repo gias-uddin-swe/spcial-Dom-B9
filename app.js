@@ -8,11 +8,21 @@ for (const btn of allBtn) {
       event.target.parentNode.childNodes[5].childNodes[1].innerText;
     const selectedContainer = document.getElementById(
       "selected-players-container"
-      );
-      
-      
+    );
 
+    event.target.setAttribute("disabled", false);
 
+    if (
+      getValueById("budget") - parseInt(price) < 0 ||
+      getValueById("cart") + 1 > 6 ||
+      getValueById("left") - 0 < 0
+    ) {
+      alert("Tomar Budget or Cart Or players er Limit sesh");
+      return;
+    }
+
+    event.target.parentNode.style.backgroundColor = "gray";
+    event.target.parentNode.style.color = "white";
 
     const div = document.createElement("div");
     div.classList.add("selected-players");
@@ -75,8 +85,12 @@ function updateLeftPlayer() {
 
 function updateCartCount() {
   const defaultCartCount = document.getElementById("cart").innerText;
-  console.log(defaultCartCount);
 
   const convertDefaultCartCount = parseInt(defaultCartCount);
   document.getElementById("cart").innerText = convertDefaultCartCount + 1;
+}
+
+function getValueById(id) {
+  const targetElement = document.getElementById(id).innerText;
+  return parseInt(targetElement);
 }
