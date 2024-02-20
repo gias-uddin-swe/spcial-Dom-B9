@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.menu-container{
+    padding: 20px;
+    background-color:rgb(101, 101, 101);
+    display: flex;
+    justify-content: space-around;
+}
+.price-color{
+    color: rgb(255, 249, 249);
+    font-weight: bold;
+    
+}
+.main-container{
+    display: flex;
+    padding: 50px;
+    align-items: top;
+    gap: 50px;
+}
+.players-container{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.player-btn{
+    padding: 15px;
+    line-height:20px;
+    border: none;
+    box-shadow: 4px 4px 8px gray;
+    border-radius: 4px;
+    margin: 5px;
+    width: 130px;
+font-size: 17px;
+text-align: center;
+}
+.cart-container{
+    width: 37%;
+    /* border: 1px solid gray; */
+    margin: auto;
+    box-shadow: 8px 8px 18px gray;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    
+}
+.selected-players{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.coupon-code{
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+}
+input{
+    padding: 8px;
+}
+.apply-btn{
+    padding: 8px;
+}
+.add-btn{
+    padding: 7px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+.padding{
+    padding: 7px;
+}

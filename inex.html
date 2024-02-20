@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="menu-container">
+      <h3>Budget: <span class="price-color" id="budget">1500</span> $</h3>
+
+      <h3>Cart: <span class="price-color" id="cart">0</span></h3>
+      <h3>left: <span class="price-color" id="left">11</span></h3>
+    </div>
+
+    <div class="main-container">
+      <div class="players-container">
+        <div class="player-btn">
+          <h5>Tamim Iqbal</h5>
+          <h5>Price: <span>300</span> $</h5>
+          <h5>Category: <span>Bat</span></h5>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <div class="player-btn">
+          <h5>Shakib Al Hasan</h5>
+          <h5>Price: <span>300</span> $</h5>
+          <h5>Category: <span>all-rounder</span></h5>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="player-btn">
+          <h5>Mushfiq</h5>
+          <h5>Price: <span>200</span> $</h5>
+          <h5>Category: <span>Bat</span></h5>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="player-btn">
+          <h5>Liton Das</h5>
+          <h5>Price: <span>300</span> $</h5>
+          <h5>Category: <span>Bat</span></h5>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="player-btn">
+          <h5>Shanto</h5>
+          <h5>Price: <span>400</span> $</h5>
+          <h5>Category: <span>Bat</span></h5>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="player-btn">
+          <h5>Mustafiz</h5>
+          <h5>Price: <span>400</span> $</h5>
+          <h5>Category: <span>Ball</span></h5>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="player-btn">
+          <h5>taskin</h5>
+          <h5>Price: <span>400</span> $</h5>
+          <h5>Category: <span>Ballt</span></h5>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="player-btn">
+          <h5>Shoriful</h5>
+          <h5>Price: <span>300</span> $</h5>
+          <h5>Category: <span>Ball</span></h5>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="player-btn">
+          <h5>Touhid Ridoy</h5>
+          <h5>Price: <span>300</span> $</h5>
+          <h5>Category: <span>Bat</span></h5>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="player-btn">
+          <h5>Mehedi Miraz</h5>
+          <h5>Price: <span>300</span> $</h5>
+          <h5>Category: <span>all-rounder</span></h5>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="player-btn">
+          <h5>Shommuy sharkar</h5>
+          <h5>Price: <span>200</span> $</h5>
+          <h5>Category: <span>Bat</span></h5>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+        <div class="player-btn">
+          <h5>SalaUddin</h5>
+          <h5>Price: <span>500</span> $</h5>
+          <h5>Category: <span>coach</span></h5>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cart-container">
+        <h2>My Cart</h2>
+        <hr />
+        <div class="selected-players">
+          <div class="name">Name</div>
+          <div class="price">Price</div>
+          <div class="category">Category</div>
+        </div>
+        <div id="selected-players-container"></div>
+        <hr />
+        <h3 class="padding">Total Cost: <span id="total-cost">0</span> $</h3>
+        <hr />
+        <div class="coupon-code">
+          <input id="coupon-code" type="text" placeholder="Coupon Code" />
+          <button
+            onclick="updateGrandTotal('click from apply')"
+            id="apply-btn"
+            class="apply-btn"
+          >
+            Apply
+          </button>
+        </div>
+        <hr />
+        <h3 class="padding">Grand Total: <span id="grand-total">0</span> $</h3>
+      </div>
+    </div>
+
+    <!-- add javascript file here  -->
+    <script src="./app.js"></script>
+  </body>
+</html>
